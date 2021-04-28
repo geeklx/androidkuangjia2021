@@ -5,7 +5,7 @@ plugins {
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
-    ndkVersion "21.1.6352462" // e.g.,  ndkVersion '21.3.6528147' 22.1.7171670
+    ndkVersion "22.1.7171670" // e.g.,  ndkVersion '21.3.6528147' 22.1.7171670 21.1.6352462
     defaultConfig {
         applicationId "com.example.myapplication"
         minSdkVersion 30
@@ -16,7 +16,7 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         externalNativeBuild {
             cmake {
-                version "3.18.1"
+                version "3.19"
                 // 指定一些编译选项
                 cppFlags "-std=c++11 -frtti -fexceptions"
                 // 也可以使用下面这种语法向变量传递参数：
@@ -68,5 +68,6 @@ dependencies {
     implementation "com.squareup.okhttp3:okhttp:3.9.1"//
     implementation "com.squareup.okhttp3:logging-interceptor:3.9.1"//
     implementation "com.squareup.okhttp3:logging-interceptor:3.9.1"//
-    implementation project(":libutils")
+//    implementation project(":libutils")
+    implementation 'com.github.geeklx:androidkuangjia2021:1.0.4'
 }
