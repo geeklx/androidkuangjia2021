@@ -1,10 +1,6 @@
 plugins {
     id 'com.android.library'
 }
-//jitpack
-apply plugin: 'com.github.dcendents.android-maven'
-group='www.github.com/geeklx/androidkuangjia2021'
-//
 apply from: './../../commonlibs2.gradle'
 // mob
 //apply from: './../../commonlibs/hunheku/libappmob/MobSDK.gradle'
