@@ -4,7 +4,7 @@ plugins {
 //jitpack
 apply plugin: 'com.github.dcendents.android-maven'
 group='com.github.geeklx'
-apply from: './../../../commonlibs1.gradle'
+apply from: './../commonlibs1.gradle'
 def config = rootProject.ext //配置
 def librarys = rootProject.ext.dependencies //
 dependencies {
