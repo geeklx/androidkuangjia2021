@@ -16,7 +16,6 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         externalNativeBuild {
             cmake {
-                version "3.19"
                 // 指定一些编译选项
                 cppFlags "-std=c++11 -frtti -fexceptions"
                 // 也可以使用下面这种语法向变量传递参数：
@@ -44,7 +43,7 @@ android {
     externalNativeBuild {
         cmake {
             path "src/main/cpp/CMakeLists.txt"
-            version "3.10.2"
+            version "3.18.1"
         }
     }
     compileOptions {
