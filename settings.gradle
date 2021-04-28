@@ -1,0 +1,3 @@
+include ':app'
+include ':libutils'
+rootProject.name = "My Application"
